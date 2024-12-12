@@ -51,11 +51,7 @@ Esto instalará todos los paquetes listados en el archivo `requirements.txt`.
 ### 5. Clave de API de OpenAI
 
 Para utilizar GPT-3.5, necesitarás una clave de API de OpenAI. Coloca tu clave en un archivo llamado `OPENAI_KEY.txt` en la raíz del proyecto. El archivo debe contener únicamente la clave de API en texto plano.
-
-### 6. Configuración adicional (si es necesario)
-
-Si tu proyecto requiere configuraciones adicionales (por ejemplo, variables de entorno o servicios externos), sigue las instrucciones específicas en esta sección.
-
+}
 ## Uso
 
 Una vez que el entorno esté configurado, puedes usar el proyecto para resumir archivos PDF. El script principal procesará los archivos PDF y generará resúmenes utilizando GPT-3.5. Asegúrate de que el archivo `OPENAI_KEY.txt` esté presente y contenga la clave de API correcta.
