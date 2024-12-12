@@ -8,7 +8,7 @@ import os
 def process_file(file_path):
     try:
         # Ejecutar el script summary.py con el archivo seleccionado
-        output_file = f"{file_path}_output.txt"
+        output_file = f"{file_path.split("/")[-1]}_output.txt"
         command = f'python summary.py "{file_path}"'
         subprocess.run(command, shell=True, check=True)
 

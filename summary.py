@@ -60,13 +60,16 @@ if __name__ == '__main__':
     if len(sys.argv) < 2:
         print("Usage: python script.py <filename>")
         sys.exit(1)
+    
+    if len(sys.argv) == 2:
+        print(sys.argv[1].split("/")[-1])
 
     input_path = sys.argv[1]
     if os.path.exists(input_path) == False:
         print(f'`{input_path}` can\'t be found.')
         exit()
 
-    output_path = f'{sys.argv[1]}_output.txt'
+    output_path = f'{sys.argv[1].split("/")[-1]}_output.txt'
         
     chunk_size = 12000
             
