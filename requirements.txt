@@ -1,0 +1,5 @@
+openai
+tqdm
+customtkinter
+tkinterdnd2
+markdown
